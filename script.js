@@ -2,15 +2,11 @@ let numbers = document.querySelectorAll(".num")
 let allButtons = document.querySelector('.buttons')
 let newAllButtons = allButtons.querySelectorAll('button')
 let numElement = document.querySelector('.numResult')
-
 let xNumber = "0"
 let yNumber = "0"
 let operadorSelecionado = ""
 let operadorAnterior = ""
 let newResult = "0"
-let numOperado = false
-
-
 let operadores = Array.from(newAllButtons).filter((operadores) => {
     return !operadores.className.includes("num")
 })
